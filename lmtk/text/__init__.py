@@ -351,4 +351,5 @@ TLDS = {
 URL_START_RE = re.compile(r'^(https?://.+?|www\..+?\..+?)', re.I)
 URL_END_RE = re.compile(r'(%s)(\/|:|$)' % '|'.join(TLDS), re.I)
 EMAIL_RE = re.compile(r'([\w\-\.\+%]+@(\w[\w\-]+\.)+[\w\-]+)', re.I)
-
+DOI_RE = re.compile(r'^10\.\d{4,}(?:\.\d+)*/\S+$', re.U)
+ISSN_RE = re.compile(r'^[A-Za-z0-9]{4}-[A-Za-z0-9]{4}$')
